@@ -1,5 +1,4 @@
-// Hand-designed knowledge graph for the site — see tools/build_synthetic_graph.py
-// to regenerate or extend it. Not derived from the real vault export.
+
 const knowledgeGraphData = {
   "nodes": [
     {

@@ -50,14 +50,11 @@
 
       if (expanding) {
         workGrid.classList.add('is-expanded');
-        // let the display:none -> block change paint before animating opacity/transform in,
-        // otherwise the browser has no prior frame to transition from
         requestAnimationFrame(() => {
           requestAnimationFrame(() => extraCards.forEach(card => card.classList.add('is-visible')));
         });
       } else {
         extraCards.forEach(card => card.classList.remove('is-visible'));
-        // wait for the fade-out to finish before removing the cards from layout
         setTimeout(() => workGrid.classList.remove('is-expanded'), prefersReduced ? 0 : 600);
       }
     });
@@ -79,11 +76,6 @@
       const next = docEl.getAttribute('data-theme-mode') === 'dark' ? 'light' : 'dark';
       docEl.setAttribute('data-theme-mode', next);
       updateLabel();
-      // Persisting the choice across visits only makes sense once this file is
-      // hosted for real — Claude's in-chat preview sandboxes localStorage, so
-      // it's intentionally left out here. Once deployed, this is all it takes:
-      //   localStorage.setItem('site-theme-mode', next);
-      // ...and reading it back in the head script above instead of matchMedia.
     });
 
     updateLabel();

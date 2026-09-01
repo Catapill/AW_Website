@@ -1,8 +1,4 @@
 // ============================= KNOWLEDGE GRAPH =============================
-// Renders the force-directed graph into #knowledgeGraph. Expects a global
-// `knowledgeGraphData` object (nodes + links) to already exist — that data
-// lives in data/knowledge-graph-data.js, loaded before this file, and is
-// regenerated from a Logseq export by tools/convert_logseq_export.py.
   (function initKnowledgeGraph(data){
     const svg = document.getElementById('knowledgeGraph');
     const panel = document.getElementById('graphPanel');
@@ -50,7 +46,6 @@
       .on('zoom', (event) => zoomLayer.attr('transform', event.transform));
 
     root.call(zoom);
-    // the default d3.zoom dblclick behaviour zooms in further — repurpose it to reset the view instead
     root.on('dblclick.zoom', null).on('dblclick', () => {
       root.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
     });

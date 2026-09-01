@@ -19,12 +19,6 @@
   }
 
   /* ============================= DARK MODE ============================= */
-  /* Just one light palette (Slate & Cobalt, :root above) and one dark
-     palette (Archive Noir, below) — every rule in this file already reads
-     colour through these tokens, so this one block is the entire dark
-     theme. data-theme-mode also drives the couple of rules (footer band,
-     logo marks, grain texture) that need to know which direction the page
-     is going. */
   html[data-theme-mode="dark"]{
     --paper:      #13151e;
     --nav:        #191b26;
@@ -55,7 +49,6 @@
     overflow-x:hidden;
   }
 
-  /* subtle paper grain, sits above bg, below content */
   .grain{
     position:fixed; inset:0; z-index:1; pointer-events:none;
     opacity:.05; mix-blend-mode:multiply;
@@ -112,11 +105,6 @@
   @media (max-width: 860px){
     .nav-links{
       position:fixed; top:72px; left:0; right:0;
-      /* height is set explicitly (not via bottom:0) because .site-nav's
-         backdrop-filter makes it the containing block for this fixed
-         element — bottom:0 would resolve against .site-nav's own 72px
-         height instead of the viewport, collapsing the panel and
-         leaving the links floating over the hero text with no backdrop. */
       height:calc(100vh - 72px);
       height:calc(100dvh - 72px);
       overflow-y:auto;

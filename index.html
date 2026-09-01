@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-  // Set the theme before anything paints, so a system dark-mode preference
-  // doesn't flash light-then-dark on load. The toggle button (bottom of the
-  // page) re-reads this same attribute on init.
   (function(){
     var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     document.documentElement.setAttribute('data-theme-mode', dark ? 'dark' : 'light');
