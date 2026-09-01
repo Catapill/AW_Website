@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Set the theme before anything paints, so a system dark-mode preference
+  // doesn't flash light-then-dark on load. The toggle button (bottom of the
+  // page) re-reads this same attribute on init.
+  (function(){
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme-mode', dark ? 'dark' : 'light');
+  })();
+</script>
+<title>Adam Woods - Data Scientist, Machine Learning &amp; Generative AI</title>
+<meta name="description" content="Portfolio of Adam Woods, a data scientist specialising in machine learning and generative AI.">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
+      <img src="assets/ag_logo.svg" alt="Adam Woods logo">
+      <span>Adam Woods</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="hero">
+    <img src="assets/ag_logo.svg" class="hero-mark" alt="" aria-hidden="true">
+    <div class="wrap hero-inner">
+      <h1>Adam Woods</h1>
+      <p class="role">Data Scientist - Machine Learning &amp; Generative AI</p>
+      <p class="lede">I work with machine learning and generative AI to find the best solutions to real-world problems, building knowledge and skills as I go.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View selected work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>10 +</strong>Projects</div>
+        <div><strong>6 Years</strong>In Data Science</div>
+        <div><strong>Location</strong>Based in Leeds, UK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About</h2>
+        <span class="section-num">01</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio reveal">
+          <p>I like learning and solving new problems.</p>
+          <p>Most of my work is focused around research and experimentation for problems that require rigorous solutions, with the findings I create actionable insights to help make every decision informed and effective, or when possible, create robust, long term solutions.</p>
+          <p>As long as I'm learning, I'm happy.</p>
+        </div>
+        <dl class="fact-sheet reveal">
+          <div class="fact-row"><dt>Location</dt><dd>Leeds, UK - open to remote working</dd></div>
+          <div class="fact-row"><dt>Focus</dt><dd>Research, experimentation, tools and everything in between</dd></div>
+          <div class="fact-row"><dt>Tools</dt><dd>Python, SQL, Git, PyTorch, LangChain and many more </dd></div>
+          <div class="fact-row"><dt>Currently</dt><dd>Senior Data Scientist at PwC</dd></div>
+          <div class="fact-row"><dt>Education</dt><dd>1st Degree in Comp Sci with AI</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERTISE ============================= -->
+  <section class="alt-bg" id="expertise">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Expertise</h2>
+        <span class="section-num">02</span>
+      </div>
+      <div class="expertise-grid reveal">
+        <div class="expertise-card">
+          <h3>Machine Learning</h3>
+          <p><b>Forecasting</b>, <b>classification</b> and causal inference on real, messy operational data.</p>
+          <div class="tag-row">
+            <span class="tag">Neural Networks</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">PyTorch</span><span class="tag">Feature Extraction</span>
+          </div>
+        </div>
+        <div class="expertise-card">
+          <h3>Generative AI</h3>
+          <p><b>LLM red-teaming</b> and evaluation, <b>retrieval-augmented systems</b>, and <b>prompt optimisation</b>.</p>
+          <div class="tag-row">
+            <span class="tag">LangChain</span><span class="tag">JudgeLLM</span><span class="tag">DSPy</span><span class="tag">Token Analysis</span><span class="tag">Hugging Face</span>
+          </div>
+        </div>
+        <div class="expertise-card">
+          <h3>Research & Experimentation</h3>
+          <p>Finding and testing the best methods for solving real-world challenges in <b>machine learning</b> and <b>quantum computing</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Research Papers</span><span class="tag">Kaggle</span><span class="tag">Literature Review</span><span class="tag">Documentation</span>
+          </div>
+        </div>
+        <div class="expertise-card">
+          <h3>Data Engineering</h3>
+          <p>Developing <b>pipelines, tools and products</b> to automate machine learning systems for repeated use with <b>dynamic data</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Automation</span><span class="tag">Delivery</span><span class="tag">Reporting</span><span class="tag">Version Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= EXPERIENCE ============================= -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <span class="section-num">04</span>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-row">
+          <span class="tl-date">???? - ????</span>
+          <div class="tl-role">
+            <h3>Insert Your Company Here?</h3>
+            <p>Working hard and doing cool stuff!</p>
+          </div>
+          <span class="tl-loc">Who Knows</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-date">2024 - Now</span>
+          <div class="tl-role">
+            <h3>Senior Data Scientist, PwC</h3>
+            <p>At PwC my work was focused on academic research, leading experimentation projects, gathering insight and delivering pipelines to implement the latest techniques. My focus was around three domains, AI Safety, Quantum Computing and Prompt Optimisation, which I was leading for the research team. This role included management of projects and junior colleagues</p>
+          </div>
+          <span class="tl-loc">Leeds</span>
+        </div>
+        <div class="tl-row">
+          <span class="tl-date">2021 - 2024</span>
+          <div class="tl-role">
+            <h3>Senior Data Scientist, UK Search Limited</h3>
+            <p>As the only data scientist at the company my role covered a wide variety of topics, from data engineering to machine learning. I also worked with two others in the stragety team, guiding them through SQL and Python. The work I did was heavily centered around clients with and operaional strategy.</p>
+          </div>
+          <span class="tl-loc">Sheffield</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= WORK ============================= -->
+  <section class="alt-bg" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="section-num">03</span>
+      </div>
+      <div class="work-grid" id="workGrid">
+
+        <article class="alt-bg work-card reveal">
+          <span class="work-year ">2023</span>
+          <h3>Payment Classification</h3>
+          <p>A machine learning classification project using a <b>neural network</b> trained on over <b>10,000 data points</b> to determine whether debt collection customers were likely to make a payment, enabling more informed decisions about which customers to contact and helping to <b>significantly reduce costs</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span><span class="tag">Neural Network</span><span class="tag">Classification</span><span class="tag">Anomaly Detection</span><span class="tag">Cost Reduction</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <span class="work-year">2025</span>
+          <h3>LLM Red-teaming Evaluation</h3>
+          <p>A production ready pipeline to determine if an LLM response contained dangerous or unwanted behaviour. Included <b>LLM Judge feature extraction</b> combined with an <b>XGBoost model</b> to align with human evaluation. This is now being used to evaluate real agentic <b>tools built by clients</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Machine Learning</span><span class="tag">Generative AI</span><span class="tag">LLM Judge</span><span class="tag">Feature Extraction</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <span class="work-year">2026</span>
+          <h3>Quantum Computing Research</h3>
+          <p>A long-term, Knowledge gathering project into the rapidly developing area of quantum computing. The aim is to develop a team of <b>subject matter experts</b> that can help the firm answer any questions clients may have about quantum computing, a growing trend that will be very impactful in the coming years. I learned the basics of <b>quantum physics</b> and also experimented with <b>quantum algorithm simulation</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Quantum Computing</span><span class="tag">Algorithms</span><span class="tag">Documentation</span>
+          </div>
+        </article>
+
+        
+        <article class="work-card reveal">
+          <span class="work-year">2026</span>
+          <h3>Prompt Optimisation</h3>
+          <p>For the AI Research team I <b>led the prompt optimisation domain</b>. This focused on applying optimisation techniques to LLM prompts in order to improve task performance and discover best practices for agentic system design. This led to the development of a prompt optimisation pipeline, a dynamic tool that allows us to easily optimise prompts for any scenario and test a wide range of methods to ensure confident results.</p>
+          <div class="tag-row">
+            <span class="tag">Optimisation</span><span class="tag">Agentic Systems</span><span class="tag">Prompt Engineering</span><span class="tag">Project Management</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2026</span>
+          <h3>Token Optimisation</h3>
+          <p>An experimental project looking into token optimisation with the aim to <b>help reduce costs</b> for LLM systems, a growing concern for internal teams and clients. This work involved research and testing into several <b>token reduction</b> and <b>prompt compression</b> techniques. Our findings helped many teams within the firm find solutions suitable for their use-case.</p>
+          <div class="tag-row">
+            <span class="tag">Cost Reduction</span><span class="tag">Prompt Engineering</span><span class="tag">Optimisation</span><span class="tag">Project Management</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2020</span>
+          <h3>Exo-Planet Identification</h3>
+          <p>My dissertation project using data from NASA to identify extremely distant stars with planets orbiting them based on recorded light intensity over-time data. At the time this type of work was done mostly by subject matter experts manually, taking significant time. This project used a <b>Convolutional Neural Network</b> to identify exo-planets with an <b>accuracy over 80%</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Neural Network</span><span class="tag">Machine Learning</span><span class="tag">Astronomy</span><span class="tag">Time Series Data</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2024</span>
+          <h3>Token Safeguarding</h3>
+          <p>An AI safety project around <b>LLM blue-teaming</b> with an aim of preventing jailbreak attacks. Several methods were tested but my part focused on token analysis, using metrics such as <b>attention and perplexity</b> to identify tokens that could lead to harmful responses and remove them before the model generates a response. These finding helped to identify the requirements and use cases for these techniques as well as the limitations such as <b>context collapse</b>.</p>
+          <div class="tag-row">
+            <span class="tag">AI Safety</span><span class="tag">Generative AI</span><span class="tag">Blue-teaming</span><span class="tag">Token Analysis</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2026</span>
+          <h3>Agentic Red-Teaming</h3>
+          <p>This AI safety project was focused around <b>agentic systems</b>, an especially important topic as LLMs now have the ability to take actions that have <b>real world consequences</b>. Testing these models with agentic specific techniques helped identify vulnerabilities that must be considered when building agentic systems and highlighted models that were reliable for agentic use cases.</p>
+          <div class="tag-row">
+            <span class="tag">AI Safety</span><span class="tag">Generative AI</span><span class="tag">Red-teaming</span><span class="tag">Agentic Systems</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2021</span>
+          <h3>Report Automation</h3>
+          <p>For UKSL one major service was to provide performance updates to clients on a regular basis, with some clients even demanding daily reports. Before I joined the team this was done manually! To solve this, I built a pipeline that allowed us to create a simple <b>YAML configuration file</b> to setup reports to be scheduled and sent <b>fully autonomously</b>. This implementation meant non-technical users could setup reports easily and freed up staff to work on more interesting areas.</p>
+          <div class="tag-row">
+            <span class="tag">Automation</span><span class="tag">Stakeholder Management</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2025</span>
+          <h3>Code Red-Teaming</h3>
+          <p>Another LLM safety project focused on testing models for <b>malicious code generation</b>. This involved implementing code specific jailbreak techniques such as pseudo-code adaptation, separating malicious requests into multiple benign components to be combined later and providing an empty function for the model to fill out to force the priority onto fulfilling the request over safety concerns. This project revealed the vulnerabilities in models and highlighted models that were especially susceptible to such attacks.</p>
+          <div class="tag-row">
+            <span class="tag">AI Safety</span><span class="tag">Generative AI</span><span class="tag">Red-Teaming</span><span class="tag">Prompt Engineering</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2025</span>
+          <h3>LLM Data Exfiltration</h3>
+          <p>A project focused on red-teaming retrieval augmented generation systems to identify model vulnerabilities that could impact <b>data privacy</b>. This involved research and experimentation for several techniques such as <b>data poisoning with redirection</b> and <b>prompt injection</b> attacks. This research demonstrated the importance of security regarding data accessible to LLMs and how content filtering should be used to avoid any sensitive data leakage.</p>
+          <div class="tag-row">
+            <span class="tag">AI Safety</span><span class="tag">Generative AI</span><span class="tag">RAG</span><span class="tag">Data Poisoning</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2021</span>
+          <h3>Light Curve Search</h3>
+          <p>As part of my degree, this project built upon my existing work with NASA's data on the light intensity of a star over time. This project used <b>fuzzy logic</b> and <b>Fréchet distance</b> to match a user drawing of a light curve to one from a real star, then linking the user to the NASA archive for that star. This project was a bit of fun but was great for learning to handle <b>time-series data</b>.</p>
+          <div class="tag-row">
+            <span class="tag">Astronomy</span><span class="tag">Time Series Data</span><span class="tag">Fuzzy Logic</span>
+          </div>
+        </article>
+        
+        <article class="work-card reveal is-extra">
+          <span class="work-year">2026</span>
+          <h3>Small Language Model Safety</h3>
+          <p>With the growing popularity of locally hosted small language models to save costs and give the organisation power over <b>data security</b>. The concern over safety testing was significant. This project gathered extensive research into the landscape of SLM red-teaming and found that today's SLMs are not built with safety in mind and should be used with caution and only for extremely narrow tasks. It also highlighted the vulnerabilities that come with <b>locally hosting models</b>, shifting the power but also the responsibility away from the large AI labs and onto the hosting organisation.</p>
+          <div class="tag-row">
+            <span class="tag">AI Safety</span><span class="tag">Generative AI</span><span class="tag">Fine-Tuning</span><span class="tag">Security</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="work-more">
+        <button type="button" class="btn btn-ghost" id="workToggle" aria-expanded="false" aria-controls="workGrid">Show all projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= KNOWLEDGE ============================= -->
+  <section id="knowledge">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Knowledge</h2>
+        <span class="section-num">05</span>
+      </div>
+      <p class="knowledge-intro reveal">Below is a network graph of my personal notes, it has been filtered for display purposes so only shows around 17% of my notes. It's still a bit messy but hopefully demonstrates the scale of my knowledge and my organisational skills when it comes to learning. You can hover or tap to see a preview of what the note covers.</p>
+
+      <div class="graph-shell reveal">
+        <div class="graph-canvas">
+          <div class="graph-search">
+            <input type="search" id="graphSearch" class="graph-search-input" placeholder="Search nodes…" autocomplete="off" aria-label="Search knowledge graph nodes">
+            <ul class="graph-search-results" id="graphSearchResults" aria-live="polite" hidden></ul>
+          </div>
+          <svg id="knowledgeGraph" role="img" aria-label="Interactive graph of linked knowledge-base pages"></svg>
+          <div class="graph-legend">
+            <span><i class="legend-dot hub"></i>Hub page</span>
+            <span><i class="legend-dot page"></i>Page</span>
+            <span><i class="legend-dot tag"></i>Tag</span>
+          </div>
+        </div>
+        <aside class="graph-panel" id="graphPanel">
+          <p class="graph-panel-kicker">Preview</p>
+          <p class="graph-panel-empty">Hover or tap a node to preview it here.</p>
+        </aside>
+      </div>
+
+      <p class="graph-caption">Drag the canvas to pan, scroll or pinch to zoom. The note summaries are AI generated so might not be perfectly accurate to the original notes. All my notes are designed to be general knowledge and contain very little sensntive data. Any sensntive data has been removed from these notes.</p>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section id="contact">
+    <div class="wrap contact-inner reveal">
+      <h2>Heard enough?</h2>
+      <p>The fastest way to reach me is by email, or find me on LinkedIn below.</p>
+      <a href="mailto:adam@adamwoods.dev" class="contact-email-link">adam@adamwoods.dev</a>
+      <p>If you do contact me, please let me know if you looked at my website, it would be intersting to find out who looks at this stuff.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-mark">
+        <img src="assets/ag_logo.svg" alt="Adam Woods logo">
+        <span>Adam Woods</span>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social-stamp" aria-label="LinkedIn">IN</a>
+        <a href="assets/adamwoods.pdf" class="social-stamp" aria-label="Download CV">CV</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>2026 Adam Woods.</span>
+      <a href="#hero">Back to the top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Switch to dark mode">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4.2"/>
+    <line x1="12" y1="1.5" x2="12" y2="4.2"/>
+    <line x1="12" y1="19.8" x2="12" y2="22.5"/>
+    <line x1="1.5" y1="12" x2="4.2" y2="12"/>
+    <line x1="19.8" y1="12" x2="22.5" y2="12"/>
+    <line x1="4.4" y1="4.4" x2="6.3" y2="6.3"/>
+    <line x1="17.7" y1="17.7" x2="19.6" y2="19.6"/>
+    <line x1="4.4" y1="19.6" x2="6.3" y2="17.7"/>
+    <line x1="17.7" y1="6.3" x2="19.6" y2="4.4"/>
+  </svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M20.5 14.7A8.5 8.5 0 1 1 9.3 3.5a7 7 0 1 0 11.2 11.2Z"/>
+  </svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="js/main.js"></script>
+<script src="data/knowledge-graph-data.js"></script>
+<script src="js/knowledge-graph.js"></script>
+
+</body>
+</html>
