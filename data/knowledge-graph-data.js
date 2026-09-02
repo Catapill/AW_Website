@@ -19,7 +19,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "attack-success-rate-metrics",
-      "label": "Attack Success Rate Metrics",
+      "label": "Attack Success Rate",
       "type": "page",
       "body": [
         "Quantifying red-teaming results as the share of attempts that successfully elicited unsafe behaviour."
@@ -35,7 +35,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "automated-red-team-detection",
-      "label": "Automated Red-Team Detection",
+      "label": "Automated Red-Team",
       "type": "page",
       "body": [
         "Using a secondary model or classifier to flag likely attack attempts in real time."
@@ -51,7 +51,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "beyond-the-tip-of-efficiency-uncovering-the-submerged-threats-of-jailbreak-attacks-in-small-language-models",
-      "label": "Beyond the Tip of Efficiency: Uncovering the Submerged Threats of Jailbreak Attacks in Small Language Models",
+      "label": "Beyond the Tip of Efficiency",
       "type": "page",
       "body": [
         "Examines safety vulnerabilities in small language models across multiple jailbreak methods and datasets."
@@ -67,7 +67,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "bluecodeagent-a-blue-teaming-agent-enabled-by-automated-red-teaming-for-codegen-ai",
-      "label": "BlueCodeAgent: A Blue Teaming Agent Enabled by Automated Red Teaming for CodeGen AI",
+      "label": "BlueCodeAgent",
       "type": "page",
       "body": [
         "A defensive agent that learns from automatically generated attacks to catch unsafe code generation."
@@ -83,7 +83,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "can-small-language-models-reliably-resist-jailbreak-attacks-a-comprehensive-evaluation",
-      "label": "Can Small Language Models Reliably Resist Jailbreak Attacks? A Comprehensive Evaluation",
+      "label": "SLM Jailbreaking Review",
       "type": "page",
       "body": [
         "A broad evaluation finding small language models are generally more vulnerable to jailbreaks than larger ones."
@@ -91,7 +91,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "chain-of-draft-thinking-faster-by-writing-less",
-      "label": "Chain of Draft: Thinking Faster by Writing Less",
+      "label": "Chain of Draft",
       "type": "page",
       "body": [
         "Prompting a model to reason in short drafts instead of full chains-of-thought cuts cost with little accuracy loss."
@@ -123,7 +123,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "compressing-context-to-enhance-inference-efficiency-of-large-language-models",
-      "label": "Compressing Context to Enhance Inference Efficiency of Large Language Models",
+      "label": "Compression Efficiency In LLMs",
       "type": "page",
       "body": [
         "A method for shortening long input contexts to cut inference cost while retaining what a task needs."
@@ -179,7 +179,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "data-pipeline-orchestration",
-      "label": "Data Pipeline Orchestration",
+      "label": "Data Pipeline",
       "type": "page",
       "body": [
         "Scheduling and monitoring the steps of a data pipeline so they run reliably in order."
@@ -195,7 +195,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "defeating-nondeterminism-in-llm-inference",
-      "label": "Defeating Nondeterminism in LLM Inference",
+      "label": "LLM Inference Determinism",
       "type": "page",
       "body": [
         "Investigates why LLM outputs vary between identical calls, and how to make inference more deterministic."
@@ -219,7 +219,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "ease-practical-and-efficient-safety-alignment-for-small-language-models",
-      "label": "EASE: Practical and Efficient Safety Alignment for Small Language Models",
+      "label": "EASE",
       "type": "page",
       "body": [
         "Proposes a lightweight safety alignment method designed for the limited capacity of small language models."
@@ -235,7 +235,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "emergent-behaviour-testing",
-      "label": "Emergent Behaviour Testing",
+      "label": "Emergent Behaviour",
       "type": "page",
       "body": [
         "Observing agents in open-ended scenarios to catch unplanned behaviour from agent-to-agent interaction."
@@ -259,7 +259,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "evidence-for-the-utility-of-quantum-computing-before-fault-tolerance",
-      "label": "Evidence for the utility of quantum computing before fault tolerance",
+      "label": "Quantum Fault Tolerance",
       "type": "page",
       "body": [
         "Argues useful quantum computation is possible on noisy, pre-fault-tolerant hardware for the right problems."
@@ -275,7 +275,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "experimental-demonstration-of-logical-magic-state-distillation",
-      "label": "Experimental demonstration of logical magic state distillation",
+      "label": "Magic States",
       "type": "page",
       "body": [
         "Reports an experimental demonstration of distilling clean logical qubit states for fault-tolerant computing."
@@ -291,7 +291,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "fine-tuning-aligned-language-models-compromises-safety-even-when-users-do-not-intend-to",
-      "label": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To",
+      "label": "Safety-Aligned Models",
       "type": "page",
       "body": [
         "Finds that ordinary fine-tuning, even on benign data, can quietly erode a model's safety alignment."
@@ -299,7 +299,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "from-explicit-cot-to-implicit-cot-learning-to-internalize-cot-step-by-step",
-      "label": "From Explicit CoT to Implicit CoT: Learning to Internalize CoT Step by Step",
+      "label": "Implicit CoT",
       "type": "page",
       "body": [
         "Trains models to internalise step-by-step reasoning so they no longer need to write it all out."
@@ -323,7 +323,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "guardrail-development",
-      "label": "Guardrail Development",
+      "label": "LLM Guardrails",
       "type": "page",
       "body": [
         "Designing rules, classifiers, or filters that sit around a model to catch unsafe inputs or outputs."
@@ -339,7 +339,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "how-to-factor-2048-bit-rsa-integers-in-8-hours-using-20-million-noisy-qubits",
-      "label": "How to factor 2048 bit RSA integers in 8 hours using 20 million noisy qubits",
+      "label": "RSA Decoding",
       "type": "page",
       "body": [
         "Estimates the real-world qubit resources Shor's algorithm would need to break RSA-2048 encryption."
@@ -347,7 +347,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "human-vs-automated-evaluation",
-      "label": "Human vs Automated Evaluation",
+      "label": "Human-Aligned Evaluation",
       "type": "page",
       "body": [
         "Comparing human judgement against LLM-based judges for scoring whether a response was actually unsafe."
@@ -363,7 +363,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "jailbreak-resistance-testing",
-      "label": "Jailbreak Resistance Testing",
+      "label": "Jailbreak Resistance",
       "type": "page",
       "body": [
         "Systematically probing a model's defences against prompts designed to bypass its safety training."
@@ -371,7 +371,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "kaleidoscopic-teaming-in-multi-agent-simulations",
-      "label": "Kaleidoscopic Teaming in Multi Agent Simulations",
+      "label": "Kaleidoscopic Teaming",
       "type": "page",
       "body": [
         "Studies emergent behaviour in multi-agent simulations, distinct from red-teaming since there's no explicit attacker."
@@ -411,7 +411,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "llmlingua-2-data-distillation-for-efficient-and-faithful-task-agnostic-prompt-compression",
-      "label": "LLMLingua-2 Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+      "label": "LLMLingua-2",
       "type": "page",
       "body": [
         "A faster, task-agnostic successor to LLMLingua trained via data distillation."
@@ -419,7 +419,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "llmlingua-compressing-prompts-for-accelerated-inference-of-large-language-models",
-      "label": "LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models",
+      "label": "LLMLingua",
       "type": "page",
       "body": [
         "Introduces compressing prompts by removing low-information tokens while preserving task performance."
@@ -427,7 +427,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "longllmlingua-accelerating-and-enhancing-llms-in-long-context-scenarios-via-prompt-compression",
-      "label": "LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression",
+      "label": "LongLLMLingua",
       "type": "page",
       "body": [
         "Extends prompt compression to long-context scenarios, improving both speed and answer quality."
@@ -435,7 +435,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "lost-in-the-middle-how-language-models-use-long-contexts",
-      "label": "Lost in the Middle: How Language Models Use Long Contexts",
+      "label": "Lost in the Middle",
       "type": "page",
       "body": [
         "Shows LLMs use information at the start or end of a long context better than information buried in the middle."
@@ -459,7 +459,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "malicious-code-generation-risks",
-      "label": "Malicious Code Generation Risks",
+      "label": "Malicious Code Generation",
       "type": "page",
       "body": [
         "Ways models can be prompted toward producing functional malware or other harmful code."
@@ -475,7 +475,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "multi-agent-attack-scenarios",
-      "label": "Multi-Agent Attack Scenarios",
+      "label": "Multi-Agent Attacks",
       "type": "page",
       "body": [
         "Test setups involving multiple interacting agents, designed to reveal risks a single-agent test would miss."
@@ -491,7 +491,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "nuclear-magnetic-resonance-qubits",
-      "label": "Nuclear Magnetic Resonance Qubits",
+      "label": "Nuclear Magnetic Resonance",
       "type": "page",
       "body": [
         "One of the earliest qubit platforms, using nuclear spins manipulated with radio-frequency pulses."
@@ -587,7 +587,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "quantum-approximate-optimisation-algorithm",
-      "label": "Quantum Approximate Optimisation Algorithm",
+      "label": "Quantum Approximate",
       "type": "page",
       "body": [
         "A hybrid quantum-classical algorithm (QAOA) for approximating solutions to combinatorial optimisation problems."
@@ -651,7 +651,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "quantum-machine-learning",
-      "label": "Quantum Machine Learning",
+      "label": "Quantum ML",
       "type": "page",
       "body": [
         "The intersection of quantum computing and ML, exploring whether quantum circuits can speed up training or inference."
@@ -675,7 +675,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "rag-exfiltration-risks",
-      "label": "RAG Exfiltration Risks",
+      "label": "RAG Exfiltration",
       "type": "page",
       "body": [
         "Ways a retrieval-augmented system can be manipulated into surfacing documents it shouldn't."
@@ -683,7 +683,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "recomp-improving-retrieval-augmented-lms-with-compression-and-selective-augmentation",
-      "label": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation",
+      "label": "RECOMP",
       "type": "page",
       "body": [
         "Compresses retrieved documents into short summaries before feeding them to a retrieval-augmented model."
@@ -707,7 +707,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "research-paper-reviews",
-      "label": "Research Paper Reviews",
+      "label": "Research Papers",
       "type": "hub",
       "body": [
         "Notes on papers worth remembering, organised by the topic they belong to."
@@ -715,7 +715,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "resource-constrained-guardrails",
-      "label": "Resource-Constrained Guardrails",
+      "label": "Constrained Guardrails",
       "type": "page",
       "body": [
         "Lightweight safety mechanisms designed to run alongside small models without heavy compute overhead."
@@ -723,7 +723,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "retrieval-augmented-generation",
-      "label": "Retrieval-Augmented Generation",
+      "label": "RAG",
       "type": "page",
       "body": [
         "Grounding a model's output in documents retrieved at query time, rather than only what it learned in training."
@@ -731,7 +731,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "robust-quantum-computational-advantage-with-programmable-3050-photon-gaussian-boson-sampling",
-      "label": "Robust quantum computational advantage with programmable 3050-photon Gaussian boson sampling",
+      "label": "Gaussian Boson Sampling",
       "type": "page",
       "body": [
         "Demonstrates a photonic quantum advantage experiment using boson sampling at unprecedented scale."
@@ -739,7 +739,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "rubric-based-scoring",
-      "label": "Rubric-Based Scoring",
+      "label": "Rubric Scoring",
       "type": "page",
       "body": [
         "Using a structured set of defined criteria to make red-teaming evaluation more consistent."
@@ -747,7 +747,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "safety-alignment-for-small-models",
-      "label": "Safety Alignment for Small Models",
+      "label": "SLM Safety Alignment",
       "type": "page",
       "body": [
         "Techniques for instilling safety behaviour in small models without a large capacity budget."
@@ -763,7 +763,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "securing-elliptic-curve-cryptocurrencies-against-quantum-vulnerabilities-resource-estimates-and-mitigations",
-      "label": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+      "label": "Elliptic Curve securities",
       "type": "page",
       "body": [
         "Estimates the quantum resources needed to break elliptic-curve cryptocurrency keys, and proposes mitigations."
@@ -787,7 +787,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "simple-probes-can-catch-sleeper-agents",
-      "label": "Simple Probes Can Catch Sleeper Agents",
+      "label": "Probed Sleeper Agents",
       "type": "page",
       "body": [
         "Shows lightweight internal probes can detect deceptive 'sleeper agent' behaviour without triggering it."
@@ -795,7 +795,7 @@ const knowledgeGraphData = {
     },
     {
       "id": "sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
-      "label": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+      "label": "Sleeper Agents",
       "type": "page",
       "body": [
         "Demonstrates that models can be trained to hide malicious behaviour that survives standard safety fine-tuning."
